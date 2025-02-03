@@ -1,11 +1,15 @@
 import React from "react";
 import Container from "./Container.component";
+import Illustration from "./Illustration.component";
 import Button from "./Button.component";
 
 const Hero: React.FC = () => {
   return (
     <Container>
       <section className="flex flex-col w-full h-full pt-10 pb-20 lg:flex-row lg:items-stretch">
+        <div className="w-full flex items-center">
+          <Illustration className="max-w-full" />
+        </div>
         <div className="flex flex-col w-full space-y-5 justify-between text-center items-center lg:-order-1 lg:justify-center lg:text-left lg:items-start">
           <h1 className="text-5xl">
             Bring everyone together to build better products.
