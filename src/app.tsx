@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.component";
 import Hero from "./components/Hero.component";
 import { twMerge } from "tailwind-merge";
 import Info from "./components/Info.component";
+import Disclaimer from "./components/Disclaimer.component";
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       <Navbar isOpen={isOpen} changeOpen={() => setIsOpen(!isOpen)} />
       <Hero />
       <Info />
+      <Disclaimer />
     </div>
   );
 };
